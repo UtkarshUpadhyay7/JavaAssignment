@@ -33,27 +33,33 @@ public class LoanApprovalSystem {
         	
         	// Nested if 
         	
-//            if(age >=21 && salary >=25000 && cscore >700) {
-//            	System.out.println("Loan approved");
-//            }
-//            else {
+//          if(age >=21 && salary >=25000 && cscore >700) {
+//           	System.out.println("Loan approved");
+//          }
+//           else {
 //            	System.out.println("loan is rejected");
-//            }
+//           }
+//        	
+//      
         	
-        	if(age>=21) {
-        		if(salary>25000) {
-        			if(cscore>700) {
-        				System.out.println("Loan is approved");
+        	if(age>21) {
+        		if(salary>=25000) {
+        			if(cscore>=700) {
+        				System.out.println("Loan is Approved");
+        				
         			}
         			else {
-        				System.out.println("Loan is rejected");
+        				System.out.println("loan is rejected");
         			}
+        		}
+        		else {
         			System.out.println("Loan is rejected");
         		}
-        		System.out.println("Loan is rejected");
+        		
         	}
-//        	
-        	
+        	else {
+        		System.out.println("loan is rejected");
+        	}
 
                   sc.close();
      }
